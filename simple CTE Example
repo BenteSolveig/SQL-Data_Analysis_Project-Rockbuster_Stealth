@@ -1,10 +1,12 @@
 # This SQL query containing a CTE finds out what’s the average amount paid by the top 5 Rockbuster Stealth customers.
 
-#The CTE, named average_amount_paid_cte, is defined before
-#the main query. This makes the code more modular and enhances readability,
-#especially when dealing with complex queries. It separates the logic of finding
-#the top 5 customers from the main query that calculates the average, making the
-#code easier to understand and maintain.
+/* 
+The CTE, named average_amount_paid_cte, is defined before
+the main query. This makes the code more modular and enhances readability,
+especially when dealing with complex queries. It separates the logic of finding
+the top 5 customers from the main query that calculates the average, making the
+code easier to understand and maintain.
+*/
 
 WITH average_amount_paid_cte AS (
     SELECT 
